@@ -1,8 +1,8 @@
 ---
 title: "Hello World"
-excerpt: "Placeholder test"
+excerpt: "We be ballin with MCP"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2025-10-27"
 author:
   name: Amber Adamson
   picture: "/assets/blog/authors/amber.png"
