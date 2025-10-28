@@ -1,4 +1,5 @@
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { getAllPosts } from "@/lib/api";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
@@ -6,6 +7,7 @@ import { ThemeSwitcher } from "./_components/theme-switcher";
 import Link from "next/link";
 
 import "./globals.css";
+import { get } from "http";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +20,7 @@ export const metadata: Metadata = {
 };
 
 // Example static posts — replace with MDX entries or API data
-const posts = [
-  { title: "First MCP Post", slug: "first-mcp-post" },
-  { title: "Second Post", slug: "second-post" },
-];
+const posts = getAllPosts();
 
 export default function RootLayout({
   children,
