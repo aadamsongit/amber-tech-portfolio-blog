@@ -8,7 +8,9 @@
   "dependencies": {
     "@next/mdx": "^16.0.0",
     "classnames": "^2.5.1",
+    "cors": "^2.8.5",
     "date-fns": "^3.6.0",
+    "express": "^5.1.0",
     "gray-matter": "^4.0.3",
     "next": "^15.5.6",
     "react": "19.0.0-rc-02c0e824-20241028",
@@ -24,5 +26,21 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.2"
-  }
+  },
+  "name": "amber-tech-portfolio",
+  "version": "1.0.0",
+  "description": "This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aadamsongit/amber-tech-portfolio-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aadamsongit/amber-tech-portfolio-blog/issues"
+  },
+  "homepage": "https://github.com/aadamsongit/amber-tech-portfolio-blog#readme"
 }
