@@ -1,5 +1,5 @@
 import express from "express";
-import { getAllPosts } from "./src/lib/api.js";
+import { getAllPosts } from "../src/lib/api.js";
 
 const app = express();
 
