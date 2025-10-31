@@ -92,17 +92,15 @@ But truthfully? I'm getting past that. I've acknowledged recently on my LinkedIn
 
 I will write more about my specific experiences with agentic tools, particularly CLI tools, and MCP servers, in the next couple of blog posts! So stay tuned!
 
-
-
 ---
 
 ## 5. What Comes Next
 
-Short reflection — where you think the ecosystem is going.
+Where will developers go from here? I think the evidence points to our environments becoming increasingly integrated. The addition of MCP servers and agentic AI can make our IDEs, GUIs, and dev tools increasingly interconnected in ways that facilitate rapid scaffolding and iteration. My hunch is that developers who take the time to understand and integrate these new technologies will be poised for success for the kinds of workflows that are increasingly expected of us. Personally, I'm excited about how these workflows can facilitate more focus towards architecture and possibly product big picture thinking by reducing the time needed to scaffold boilerplate code, but, having tested these agentic tools, I think some guardrails will be needed to really take advantage of the benefits. One huge guardrail I'm learning about is **spec-driven development**, which I will be writing another post about. 
 
-Add a “Further Reading” section linking to:
+Meanwhile, there's some excellent writing out there about agentic AI and MCP servers. I would recommend some of the following resources for further reading: 
 
-- [ByteByteGo: What Is Model Context Protocol?](link)
-- [Anthropic MCP Docs](link)
-- [Cursor](link)
-- [Amazon Q CLI](link)
+- [ByteByteGo: What Is Model Context Protocol?](https://blog.bytebytego.com/p/ep154-what-is-mcp)
+- [Anthropic MCP Docs](https://docs.claude.com/en/docs/mcp)
+- [Cursor](https://cursor.com/)
+- [Amazon Q CLI](https://aws.amazon.com/developer/learning/q-developer-cli/)
