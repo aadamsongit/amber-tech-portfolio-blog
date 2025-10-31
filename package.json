@@ -1,11 +1,11 @@
 {
   "private": true,
- "scripts": {
-  "dev": "npm run build:mcp && concurrently \"next dev --turbopack\" \"node mcp-server-dist/index.js\"",
-  "build": "next build",
-  "build:mcp": "tsc src/lib/api.ts --outDir mcp-server-dist --module esnext --target es2020 --moduleResolution bundler --esModuleInterop --skipLibCheck && tsc mcp-server-dist/index.ts --outDir mcp-server-dist --module esnext --target es2020 --moduleResolution bundler --esModuleInterop --skipLibCheck",
-  "start": "next start"
-},
+  "scripts": {
+    "dev": "npm run build:mcp && concurrently \"next dev --turbopack\" \"node mcp-server-dist/index.js\"",
+    "build": "next build",
+    "build:mcp": "tsc src/lib/api.ts --outDir mcp-server-dist --module esnext --target es2020 --moduleResolution bundler --esModuleInterop --skipLibCheck && tsc mcp-server-dist/index.ts --outDir mcp-server-dist --module esnext --target es2020 --moduleResolution bundler --esModuleInterop --skipLibCheck",
+    "start": "next start"
+  },
   "dependencies": {
     "@next/mdx": "^16.0.0",
     "classnames": "^2.5.1",
@@ -20,6 +20,7 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
+    "@types/express": "^5.0.5",
     "@types/node": "^20.14.8",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
