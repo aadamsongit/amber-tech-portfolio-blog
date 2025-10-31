@@ -28,6 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Plausible analytics */}
+        <script
+          async
+          defer
+          data-domain="aadamson.dev"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
+
         {/* Favicons / meta */}
         <link
           rel="apple-touch-icon"
