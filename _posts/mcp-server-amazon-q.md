@@ -83,6 +83,3 @@ So the agent successfully queried the MCP server and identified my posts!
 Admittedly, this demo is pretty simplistic, but it gives you (and me) an idea of what MCP/agent integration can accomplish. Having the agent detect something in my folder structure and return information about it? Pretty neat. Having completed this demo, I'm very excited to integrate these tools into more complex workflows and use cases.
 
 I hope you found this demo to be useful. Next, I will be writing a post on an incredibly useful technique I've just learned about for MCPs and agentic workflows: spec-driven development. 
-
-
-
