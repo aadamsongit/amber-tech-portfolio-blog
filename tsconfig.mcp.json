@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./mcp-server-dist",
+    "module": "esnext",
+    "target": "es2020",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/lib/api.ts", "src/interfaces/**/*.ts", "mcp-server-dist/index.ts"]
+}

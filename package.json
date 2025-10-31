@@ -1,10 +1,11 @@
 {
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start"
-  },
+ "scripts": {
+  "dev": "npm run build:mcp && concurrently \"next dev --turbopack\" \"node mcp-server-dist/index.js\"",
+  "build": "next build",
+  "build:mcp": "tsc src/lib/api.ts --outDir mcp-server-dist --module esnext --target es2020 --moduleResolution bundler --esModuleInterop --skipLibCheck && tsc mcp-server-dist/index.ts --outDir mcp-server-dist --module esnext --target es2020 --moduleResolution bundler --esModuleInterop --skipLibCheck",
+  "start": "next start"
+},
   "dependencies": {
     "@next/mdx": "^16.0.0",
     "classnames": "^2.5.1",
@@ -23,9 +24,11 @@
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "autoprefixer": "^10.4.19",
+    "concurrently": "^9.2.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   },
   "name": "amber-tech-portfolio",
   "version": "1.0.0",
@@ -38,7 +41,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/aadamsongit/amber-tech-portfolio-blog/issues"
   },
